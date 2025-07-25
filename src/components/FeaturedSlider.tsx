@@ -7,7 +7,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 const FeaturedSlider = () => {
   const isMobile = useIsMobile();
   
-  // Updated featured apps for desktop view with lighter theme gradient
+  // Updated featured apps with cream background
   const desktopFeaturedApps = [
     {
       id: 'v0-gamini',
@@ -21,7 +21,7 @@ const FeaturedSlider = () => {
       verified: true,
       featured: true,
       downloadLink: 'https://allyonoapp.in/download/v0-gamini',
-      gradient: 'from-[#E8F5E9] to-[#C8E6C9]'
+      gradient: 'from-[#f5f5f0] to-[#f0f0e6]'
     },
     {
       id: 'rummy-king',
@@ -35,7 +35,7 @@ const FeaturedSlider = () => {
       verified: true,
       featured: true,
       downloadLink: 'https://allyonoapp.in/download/rummy-king',
-      gradient: 'from-[#E8F5E9] to-[#C8E6C9]'
+      gradient: 'from-[#f5f5f0] to-[#f0f0e6]'
     },
     {
       id: 'teen-patti',
@@ -49,11 +49,11 @@ const FeaturedSlider = () => {
       verified: true,
       featured: true,
       downloadLink: 'https://allyonoapp.in/download/teen-patti',
-      gradient: 'from-[#E8F5E9] to-[#C8E6C9]'
+      gradient: 'from-[#f5f5f0] to-[#f0f0e6]'
     }
   ];
 
-  // Mobile view apps with updated lighter theme gradient
+  // Mobile view apps with cream background
   const mobileFeaturedApps = [
     {
       id: 'yono-arcade',
@@ -128,9 +128,14 @@ const FeaturedSlider = () => {
 
         {/* Mobile View */}
         <div className="md:hidden px-2 mb-6">
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-3 gap-2 relative">
             {mobileFeaturedApps.map((app, index) => (
-              <MobileFeaturedCard key={app.id} app={app} index={index} />
+              <MobileFeaturedCard 
+                key={app.id} 
+                app={app} 
+                index={index} 
+                isCenter={index === 1} 
+              />
             ))}
           </div>
         </div>
@@ -211,7 +216,7 @@ const DesktopFeaturedCard = ({ app, index }: DesktopFeaturedCardProps) => {
       }}
       className="relative"
     >
-      <div className={`bg-gradient-to-br ${app.gradient} shadow-md p-5 h-full flex flex-col overflow-hidden rounded-xl border border-green-200`}>
+      <div className={`bg-gradient-to-br ${app.gradient} shadow-md p-5 h-full flex flex-col overflow-hidden rounded-xl border border-[#e0e0d0]`}>
         <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full -mr-10 -mt-10 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-green-500/10 rounded-full -ml-6 -mb-6 blur-2xl"></div>
         
@@ -248,7 +253,7 @@ const DesktopFeaturedCard = ({ app, index }: DesktopFeaturedCardProps) => {
         </div>
 
         {/* Bonus Info */}
-        <div className="bg-white/60 rounded-lg p-4 mb-4 border border-green-100">
+        <div className="bg-white/60 rounded-lg p-4 mb-4 border border-[#e0e0d0]">
           <div className="flex items-center justify-between">
             <div className="text-sm text-black/70">
               Signup Bonus
@@ -293,7 +298,7 @@ const DesktopFeaturedCard = ({ app, index }: DesktopFeaturedCardProps) => {
   );
 };
 
-// Mobile card component with lighter theme
+// Mobile card component with cream background
 interface MobileFeaturedCardProps {
   app: {
     id: string;
@@ -304,9 +309,10 @@ interface MobileFeaturedCardProps {
     verified: boolean;
   };
   index: number;
+  isCenter?: boolean;
 }
 
-const MobileFeaturedCard = ({ app, index }: MobileFeaturedCardProps) => {
+const MobileFeaturedCard = ({ app, index, isCenter }: MobileFeaturedCardProps) => {
   const cardVariants: Variants = {
     hidden: { 
       opacity: 0, 
@@ -337,23 +343,25 @@ const MobileFeaturedCard = ({ app, index }: MobileFeaturedCardProps) => {
         scale: 1.05,
         transition: { type: "spring", stiffness: 300 }
       }}
-      className="bg-gradient-to-br from-[#E8F5E9] to-[#C8E6C9] rounded-lg overflow-hidden border border-green-200 relative shadow-md h-40"
+      className={`bg-gradient-to-br from-[#f5f5f0] to-[#f0f0e6] rounded-lg overflow-hidden border border-[#e0e0d0] relative shadow-[0_4px_24px_0_rgba(44,62,80,0.15),0_1.5px_6px_0_rgba(44,62,80,0.10)] h-44 pb-2 flex flex-col items-center justify-between
+        ${isCenter ? 'z-10 -mt-6 h-56 scale-110 shadow-[0_8px_32px_0_rgba(44,62,80,0.22),0_2px_8px_0_rgba(44,62,80,0.13)] border-green-400 pb-3' : 'z-0'}
+      `}
     >
       {/* Number Label */}
-      <div className="absolute top-1 right-1 bg-green-500/20 rounded-full w-6 h-6 flex items-center justify-center">
+      <div className={`absolute top-1 right-1 bg-green-500/20 rounded-full w-6 h-6 flex items-center justify-center ${isCenter ? 'text-lg w-7 h-7' : ''}`}>
         <span className="text-xs font-bold text-black">{app.number}</span>
       </div>
       
-      <div className="flex flex-col items-center p-2 text-center h-full">
+      <div className="flex flex-col items-center p-2 text-center h-full w-full">
         {/* App Logo */}
-        <div className="mb-2 mt-1">
-          <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center">
-            <span className="text-3xl">{app.icon}</span>
+        <div className={`mb-2 mt-1 ${isCenter ? 'mt-2 mb-3' : ''}`}>
+          <div className={`w-16 h-16 ${isCenter ? 'w-20 h-20' : ''} rounded-full bg-green-500/20 flex items-center justify-center mx-auto`}>
+            <span className={`text-3xl ${isCenter ? 'text-4xl' : ''}`}>{app.icon}</span>
           </div>
         </div>
         
         {/* App Name */}
-        <h3 className="font-bold text-sm mb-2 text-black">
+        <h3 className={`font-bold text-sm mb-2 text-black ${isCenter ? 'text-base mb-3' : ''}`}>
           {app.name}
         </h3>
         
@@ -365,7 +373,7 @@ const MobileFeaturedCard = ({ app, index }: MobileFeaturedCardProps) => {
           className="block w-full mt-auto"
         >
           <Button 
-            className="bg-green-500 hover:bg-green-600 text-white font-medium border-none rounded-full px-2 py-0 h-7 w-full text-xs transition-colors duration-300"
+            className={`bg-green-500 hover:bg-green-600 text-white font-medium border-none rounded-full px-2 py-0 h-7 w-full text-xs transition-colors duration-300 ${isCenter ? 'h-9 text-sm' : ''}`}
           >
             Download
           </Button>
@@ -373,7 +381,7 @@ const MobileFeaturedCard = ({ app, index }: MobileFeaturedCardProps) => {
         
         {/* Trusted Label */}
         {app.verified && (
-          <div className="mt-1 text-[10px] font-medium text-black">
+          <div className={`mt-1 text-[10px] font-medium text-black ${isCenter ? 'text-xs font-bold mb-1' : 'mb-1'} w-full text-center`}>
             100% Trusted
           </div>
         )}

@@ -771,7 +771,7 @@ const Navbar = () => {
           }}
           transition={{ duration: 0.3 }}
         >
-          <div className="py-4 space-y-3 border-t border-[#31511E]/20">
+          <div className="py-4 space-y-3 border-t border-[#31511E]/20 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md rounded-b-lg shadow-lg">
             {navItems.map((item, index) => (
               <motion.a
                 key={item.name}
@@ -782,7 +782,7 @@ const Navbar = () => {
                 transition={{ delay: index * 0.1 }}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                <item.icon className="w-5 h-5 text-[#31511E]" />
+                <item.icon className="w-5 h-5 text-green-600 dark:text-green-500" />
                 <span className="font-medium">{item.name}</span>
               </motion.a>
             ))}

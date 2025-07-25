@@ -137,27 +137,27 @@ const Hero = () => {
             </Button>
           </motion.div>
 
-          {/* Stats */}
+          {/* Stats - Now in a single row on all screen sizes */}
           <motion.div 
             variants={itemVariants}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
+            className="flex flex-row overflow-x-auto pb-4 gap-3 md:gap-4 lg:gap-6 justify-between"
           >
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
-                className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 shadow-lg rounded-xl p-6 text-center"
+                className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 shadow-lg rounded-xl p-3 md:p-4 lg:p-6 text-center flex-1 min-w-[80px]"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="flex justify-center mb-3">
-                  <div className={`p-3 rounded-full bg-green-500/20`}>
-                    <stat.icon className={`w-6 h-6 ${stat.color}`} />
+                <div className="flex justify-center mb-1 md:mb-2">
+                  <div className={`p-2 md:p-3 rounded-full bg-green-500/20`}>
+                    <stat.icon className={`w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 ${stat.color}`} />
                   </div>
                 </div>
-                <div className="text-2xl lg:text-3xl font-bold text-green-500 mb-1">
+                <div className="text-xl md:text-2xl lg:text-3xl font-bold text-green-500 mb-0 md:mb-1">
                   {stat.value}
                 </div>
-                <div className="text-sm text-muted-foreground font-medium">
+                <div className="text-xs md:text-sm text-muted-foreground font-medium">
                   {stat.label}
                 </div>
               </motion.div>

@@ -140,15 +140,8 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              © 2024 Yono App. All rights reserved. Made with{' '}
-              <motion.span
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 1, repeat: Infinity }}
-                className="inline-block"
-              >
-                <Heart className="w-4 h-4 inline text-red-500 fill-current" />
-              </motion.span>
-              {' '}by Lovable.dev
+              © 2025 Yono App. All rights reserved.
+             
             </p>
             
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">

@@ -564,6 +564,110 @@ const AppListing = () => {
       verified: true,
       downloadLink: 'https://allyonoapp.in/download/spin-777',
       detailLink: '/app/spin-777'
+    },
+    {
+      id: 'spin-lucky',
+      name: 'Spin Lucky',
+      icon: '🎮',
+      rating: 4.2,
+      downloads: '60K+',
+      bonus: '₹30',
+      minWithdrawal: '₹100',
+      category: 'Casino',
+      verified: true,
+      downloadLink: 'https://allyonoapp.in/download/spin-lucky',
+      detailLink: '/app/spin-lucky'
+    },
+    {
+      id: 'ind-bingo',
+      name: 'Ind Bingo',
+      icon: '🎮',
+      rating: 4.3,
+      downloads: '70K+',
+      bonus: '₹50',
+      minWithdrawal: '₹100',
+      category: 'Bingo',
+      verified: true,
+      downloadLink: 'https://allyonoapp.in/download/ind-bingo',
+      detailLink: '/app/ind-bingo'
+    },
+    {
+      id: 'my-777',
+      name: 'My 777',
+      icon: '🎮',
+      rating: 4.1,
+      downloads: '55K+',
+      bonus: '₹21',
+      minWithdrawal: '₹100',
+      category: 'Casino',
+      verified: true,
+      downloadLink: 'https://allyonoapp.in/download/my-777',
+      detailLink: '/app/my-777'
+    },
+    {
+      id: 'mdm-bet',
+      name: 'Mdm Bet',
+      icon: '🎮',
+      rating: 4.2,
+      downloads: '60K+',
+      bonus: '₹30',
+      minWithdrawal: '₹100',
+      category: 'Betting',
+      verified: true,
+      downloadLink: 'https://allyonoapp.in/download/mdm-bet',
+      detailLink: '/app/mdm-bet'
+    },
+    {
+      id: '101-z',
+      name: '101 Z',
+      icon: '🎮',
+      rating: 4.0,
+      downloads: '50K+',
+      bonus: '₹28',
+      minWithdrawal: '₹100',
+      category: 'Casino',
+      verified: true,
+      downloadLink: 'https://allyonoapp.in/download/101-z',
+      detailLink: '/app/101-z'
+    },
+    {
+      id: 'mkm-bet',
+      name: 'Mkm Bet',
+      icon: '🎮',
+      rating: 4.2,
+      downloads: '60K+',
+      bonus: '₹99',
+      minWithdrawal: '₹100',
+      category: 'Betting',
+      verified: true,
+      downloadLink: 'https://allyonoapp.in/download/mkm-bet',
+      detailLink: '/app/mkm-bet'
+    },
+    {
+      id: 'teen-patti-bliss',
+      name: 'Teen Patti Bliss',
+      icon: '🎮',
+      rating: 4.5,
+      downloads: '80K+',
+      bonus: '₹50',
+      minWithdrawal: '₹100',
+      category: 'Card Game',
+      verified: true,
+      downloadLink: 'https://allyonoapp.in/download/teen-patti-bliss',
+      detailLink: '/app/teen-patti-bliss'
+    },
+    {
+      id: 'yono-rummy',
+      name: 'Yono Rummy',
+      icon: '🎮',
+      rating: 4.4,
+      downloads: '90K+',
+      bonus: '₹27',
+      minWithdrawal: '₹100',
+      category: 'Card Game',
+      verified: true,
+      downloadLink: 'https://allyonoapp.in/download/yono-rummy',
+      detailLink: '/app/yono-rummy'
     }
   ];
 
@@ -580,6 +684,15 @@ const AppListing = () => {
   return (
     <section className="bg-gray-50 py-2">
       <div className="w-full px-2">
+        <div className="flex flex-col items-center mb-8 mt-2">
+          <div className="flex items-center justify-center mb-2">
+            <span className="text-3xl md:text-4xl mr-2 animate-bounce drop-shadow-lg">🎮</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center text-black tracking-tight">
+              All <span className="text-green-700">Yono</span> Apps
+            </h2>
+          </div>
+          <div className="h-1 w-16 md:w-24 bg-green-500 rounded-full mt-2 mb-1"></div>
+        </div>
         <motion.div
           variants={containerVariants}
           initial="hidden"

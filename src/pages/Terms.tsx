@@ -121,12 +121,12 @@ const Terms = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <div className="flex justify-center mb-6">
-              <div className="p-4 rounded-full bg-gradient-to-r from-primary/10 to-primary/20">
-                <FileText className="w-12 h-12 text-primary" />
+              <div className="p-4 rounded-full bg-green-500/20">
+                <FileText className="w-12 h-12 text-green-500" />
               </div>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Terms & <span className="text-gradient">Conditions</span>
+                          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Terms & <span className="text-green-500">Conditions</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
               Please read these terms and conditions carefully before using our platform.
@@ -149,10 +149,10 @@ const Terms = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="mb-12 p-6 glass rounded-lg border-l-4 border-primary"
+              className="mb-12 p-6 glass rounded-lg border-l-4 border-green-500"
             >
               <div className="flex items-start space-x-3">
-                <AlertCircle className="w-6 h-6 text-primary mt-1" />
+                <AlertCircle className="w-6 h-6 text-green-500 mt-1" />
                 <div>
                   <h3 className="font-bold text-lg mb-2">Important Notice</h3>
                   <p className="text-muted-foreground">
@@ -197,8 +197,8 @@ const Terms = () => {
               className="mt-12 p-8 glass rounded-lg text-center"
             >
               <div className="flex justify-center mb-4">
-                <div className="p-3 rounded-full bg-gradient-to-r from-primary/10 to-primary/20">
-                  <Shield className="w-8 h-8 text-primary" />
+                <div className="p-3 rounded-full bg-green-500/20">
+                  <Shield className="w-8 h-8 text-green-500" />
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-4">Questions About These Terms?</h3>
@@ -208,13 +208,13 @@ const Terms = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="mailto:support@yonoapp.com"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-primary/80 text-white font-medium hover:shadow-lg transition-all"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-green-500 hover:bg-green-600 text-white font-medium hover:shadow-lg transition-all"
                 >
                   Email Support
                 </a>
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-primary text-primary font-medium hover:bg-primary/10 transition-all"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-green-500 text-green-500 font-medium hover:bg-green-500/10 transition-all"
                 >
                   Contact Page
                 </a>

@@ -18,7 +18,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-t from-[#1A2809]/20 to-background border-t border-[#31511E]/20">
+    <footer className="bg-gradient-to-t from-green-500/20 to-background border-t border-green-500/20">
       <div className="container mx-auto px-4 py-12 lg:py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
@@ -31,11 +31,11 @@ const Footer = () => {
             className="lg:col-span-2"
           >
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[#1A2809] to-[#31511E] flex items-center justify-center shadow-dark">
+              <div className="w-12 h-12 rounded-xl bg-green-500 flex items-center justify-center shadow-dark">
                 <Smartphone className="w-7 h-7 text-[#F6FCDF]" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#31511E] to-[#859F3D] font-poppins">
+                <h3 className="text-2xl font-bold text-green-500 font-poppins">
                   Yono App
                 </h3>
                 <p className="text-sm text-muted-foreground">
@@ -57,9 +57,9 @@ const Footer = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="flex items-center space-x-2 p-3 glass-dark rounded-lg border border-[#31511E]/20"
+                  className="flex items-center space-x-2 p-3 glass-dark rounded-lg border border-green-500/20"
                 >
-                  <feature.icon className="w-4 h-4 text-[#859F3D]" />
+                  <feature.icon className="w-4 h-4 text-green-500" />
                   <span className="text-xs font-medium">{feature.text}</span>
                 </motion.div>
               ))}
@@ -85,7 +85,7 @@ const Footer = () => {
                 >
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-[#31511E] transition-colors duration-200 hover:underline"
+                    className="text-muted-foreground hover:text-green-500 transition-colors duration-200 hover:underline"
                   >
                     {link.name}
                   </a>
@@ -105,11 +105,11 @@ const Footer = () => {
             <div className="space-y-4">
               <motion.a
                 href="mailto:support@yonoapp.com"
-                className="flex items-center space-x-3 text-muted-foreground hover:text-[#31511E] transition-colors group"
+                className="flex items-center space-x-3 text-muted-foreground hover:text-green-500 transition-colors group"
                 whileHover={{ x: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="p-2 rounded-lg bg-gradient-to-r from-[#1A2809]/10 to-[#31511E]/10 group-hover:from-[#1A2809]/20 group-hover:to-[#31511E]/20 transition-all">
+                <div className="p-2 rounded-lg bg-green-500/10 group-hover:bg-green-500/20 transition-all">
                   <Mail className="w-4 h-4" />
                 </div>
                 <span className="text-sm">support@yonoapp.com</span>
@@ -117,11 +117,11 @@ const Footer = () => {
               
               <motion.a
                 href="#"
-                className="flex items-center space-x-3 text-muted-foreground hover:text-[#31511E] transition-colors group"
+                className="flex items-center space-x-3 text-muted-foreground hover:text-green-500 transition-colors group"
                 whileHover={{ x: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="p-2 rounded-lg bg-gradient-to-r from-[#1A2809]/10 to-[#31511E]/10 group-hover:from-[#1A2809]/20 group-hover:to-[#31511E]/20 transition-all">
+                <div className="p-2 rounded-lg bg-green-500/10 group-hover:bg-green-500/20 transition-all">
                   <MessageCircle className="w-4 h-4" />
                 </div>
                 <span className="text-sm">Join Telegram Support</span>
@@ -136,7 +136,7 @@ const Footer = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="border-t border-[#31511E]/20 pt-8 mt-12"
+          className="border-t border-green-500/20 pt-8 mt-12"
         >
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground text-center md:text-left">
@@ -148,7 +148,7 @@ const Footer = () => {
               <span>🇮🇳 Made in India</span>
               <span className="hidden sm:block">•</span>
               <span className="flex items-center space-x-1">
-                <Shield className="w-4 h-4 text-[#31511E]" />
+                <Shield className="w-4 h-4 text-green-500" />
                 <span>100% Secure</span>
               </span>
             </div>

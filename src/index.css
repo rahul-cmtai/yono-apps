@@ -132,11 +132,11 @@ All colors MUST be HSL.
   /* Gaming Platform Button Variants */
   .btn-gaming {
     @apply relative inline-flex items-center justify-center px-6 py-3 font-semibold rounded-xl;
-    @apply bg-gradient-to-r from-[#1A2809] to-[#31511E] text-[#F6FCDF];
+    @apply bg-green-500 text-[#F6FCDF];
     @apply shadow-lg hover:shadow-xl transform hover:scale-105;
     @apply transition-all duration-300 ease-out;
     @apply before:absolute before:inset-0 before:rounded-xl;
-    @apply before:bg-gradient-to-r before:from-[#31511E] before:to-[#859F3D];
+    @apply before:bg-green-500/20;
     @apply before:opacity-0 hover:before:opacity-20 before:transition-opacity;
     box-shadow: 0 0 20px rgba(26, 40, 9, 0.4);
   }
@@ -147,8 +147,8 @@ All colors MUST be HSL.
   
   .btn-secondary-gaming {
     @apply relative inline-flex items-center justify-center px-6 py-3 font-semibold rounded-xl;
-    @apply bg-[#F6FCDF]/10 backdrop-blur-sm border border-[#31511E]/50 text-[#31511E];
-    @apply hover:bg-[#31511E]/10 hover:border-[#31511E]/70;
+    @apply bg-[#F6FCDF]/10 backdrop-blur-sm border border-green-500/50 text-green-500;
+    @apply hover:bg-green-500/10 hover:border-green-500/70;
     @apply transition-all duration-300 ease-out transform hover:scale-105;
   }
 
@@ -161,7 +161,7 @@ All colors MUST be HSL.
   }
   
   .card-gaming::before {
-    @apply absolute inset-0 bg-gradient-to-r from-[#1A2809]/10 to-[#859F3D]/10;
+    @apply absolute inset-0 bg-green-500/10;
     @apply opacity-0 transition-opacity duration-300;
     content: '';
   }
@@ -185,11 +185,11 @@ All colors MUST be HSL.
 
   /* Text Gradient */
   .text-gradient {
-    @apply bg-gradient-to-r from-[#31511E] to-[#859F3D] bg-clip-text text-transparent;
+    @apply text-green-500;
   }
   
   .text-gradient-dark {
-    @apply bg-gradient-to-r from-[#1A2809] to-[#31511E] bg-clip-text text-transparent;
+    @apply text-green-500;
   }
 
   /* Glassmorphism */
@@ -198,6 +198,6 @@ All colors MUST be HSL.
   }
   
   .glass-dark {
-    @apply bg-[#1A2809]/10 backdrop-blur-md border border-[#31511E]/20;
+    @apply bg-green-500/10 backdrop-blur-md border border-green-500/20;
   }
 }

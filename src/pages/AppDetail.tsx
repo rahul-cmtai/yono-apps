@@ -178,8 +178,8 @@ const AppDetail = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              Game <span className="text-gradient">Screenshots</span>
+                          <h2 className="text-2xl font-bold mb-6 text-center">
+              Game <span className="text-green-500">Screenshots</span>
             </h2>
             <div className="flex gap-4 overflow-x-auto pb-4">
               {appData.screenshots.map((screenshot, index) => (
@@ -213,8 +213,8 @@ const AppDetail = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Key <span className="text-gradient">Features</span>
+                          <h2 className="text-2xl font-bold mb-8 text-center">
+              Key <span className="text-green-500">Features</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {appData.features.map((feature, index) => (
@@ -245,8 +245,8 @@ const AppDetail = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              How to <span className="text-gradient">Play</span>
+                          <h2 className="text-2xl font-bold mb-8 text-center">
+              How to <span className="text-green-500">Play</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {appData.howToPlay.map((step, index) => (
@@ -259,7 +259,7 @@ const AppDetail = () => {
                   className="text-center"
                 >
                   <div className="mb-4">
-                    <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-r from-primary to-primary/80 flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                    <div className="w-16 h-16 mx-auto rounded-full bg-green-500 flex items-center justify-center text-white font-bold text-xl shadow-lg">
                       {step.step}
                     </div>
                   </div>
@@ -286,8 +286,8 @@ const AppDetail = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Frequently Asked <span className="text-gradient">Questions</span>
+                          <h2 className="text-2xl font-bold mb-8 text-center">
+              Frequently Asked <span className="text-green-500">Questions</span>
             </h2>
             <Accordion type="single" collapsible className="space-y-4">
               {appData.faqs.map((faq, index) => (
@@ -322,8 +322,8 @@ const AppDetail = () => {
             <Card className="card-gaming p-8">
               <CardContent className="p-0">
                 <div className="flex justify-center mb-4">
-                  <div className="p-3 rounded-full bg-gradient-to-r from-primary/10 to-primary/20">
-                    <Play className="w-8 h-8 text-primary" />
+                  <div className="p-3 rounded-full bg-green-500/20">
+                    <Play className="w-8 h-8 text-green-500" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-4">

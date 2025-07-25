@@ -43,7 +43,7 @@ const Hero = () => {
       
       {/* Floating Elements */}
       <motion.div
-        className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-r from-[#1A2809] to-[#859F3D] rounded-full opacity-30 blur-xl"
+        className="absolute top-20 left-10 w-20 h-20 bg-green-500 rounded-full opacity-30 blur-xl"
         animate={{ 
           y: [0, -20, 0],
           x: [0, 10, 0],
@@ -70,7 +70,7 @@ const Hero = () => {
         }}
       />
       <motion.div
-        className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-r from-[#31511E] to-[#1A2809] rounded-full opacity-20 blur-xl"
+        className="absolute top-40 right-20 w-24 h-24 bg-green-500 rounded-full opacity-20 blur-xl"
         animate={{ 
           y: [0, 15, 0],
           x: [0, 10, 0],
@@ -94,9 +94,9 @@ const Hero = () => {
           {/* Badge */}
           <motion.div
             variants={itemVariants}
-            className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#1A2809]/20 to-[#859F3D]/20 backdrop-blur-sm border border-[#F6FCDF]/20 rounded-full px-6 py-2 mb-8"
+            className="inline-flex items-center space-x-2 bg-green-500/20 backdrop-blur-sm border border-[#F6FCDF]/20 rounded-full px-6 py-2 mb-8"
           >
-            <Shield className="w-4 h-4 text-[#859F3D]" />
+            <Shield className="w-4 h-4 text-green-500" />
             <span className="text-sm font-medium">India's Most Trusted Gaming Platform</span>
           </motion.div>
 
@@ -105,7 +105,7 @@ const Hero = () => {
             variants={itemVariants}
             className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight"
           >
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#31511E] to-[#859F3D]">India's Most Trusted</span>
+            <span className="text-green-500">India's Most Trusted</span>
             <br />
             <span className="text-foreground">Gaming APK Site</span>
           </motion.h1>
@@ -115,7 +115,7 @@ const Hero = () => {
             variants={itemVariants}
             className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed"
           >
-            Download trusted APKs. Get <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#31511E] to-[#859F3D] font-bold">₹51 bonus</span>. Start winning today!
+            Download trusted APKs. Get <span className="text-green-500 font-bold">₹51 bonus</span>. Start winning today!
           </motion.p>
 
           {/* CTA Buttons */}
@@ -123,14 +123,14 @@ const Hero = () => {
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
           >
-            <Button size="lg" className="bg-gradient-to-r from-[#1A2809] to-[#31511E] hover:from-[#31511E] hover:to-[#1A2809] text-white border-none text-lg px-8 py-4 w-full sm:w-auto">
+            <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white border-none text-lg px-8 py-4 w-full sm:w-auto">
               <Download className="w-5 h-5 mr-2" />
               Download APK Now
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-[#31511E] text-[#31511E] hover:bg-[#31511E]/10 text-lg px-8 py-4 w-full sm:w-auto"
+              className="border-green-500 text-green-500 hover:bg-green-500/10 text-lg px-8 py-4 w-full sm:w-auto"
             >
               <Wallet className="w-5 h-5 mr-2" />
               Claim ₹51 Bonus
@@ -150,11 +150,11 @@ const Hero = () => {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <div className="flex justify-center mb-3">
-                  <div className={`p-3 rounded-full bg-gradient-to-r from-[#1A2809]/20 to-[#859F3D]/20`}>
+                  <div className={`p-3 rounded-full bg-green-500/20`}>
                     <stat.icon className={`w-6 h-6 ${stat.color}`} />
                   </div>
                 </div>
-                <div className="text-2xl lg:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#31511E] to-[#859F3D] mb-1">
+                <div className="text-2xl lg:text-3xl font-bold text-green-500 mb-1">
                   {stat.value}
                 </div>
                 <div className="text-sm text-muted-foreground font-medium">
@@ -173,7 +173,7 @@ const Hero = () => {
         transition={{ duration: 2, repeat: Infinity }}
       >
         <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gradient-to-b from-[#1A2809] to-[#859F3D] rounded-full mt-2 animate-pulse" />
+          <div className="w-1 h-3 bg-green-500 rounded-full mt-2 animate-pulse" />
         </div>
       </motion.div>
     </section>

@@ -80,8 +80,8 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Get in <span className="text-gradient">Touch</span>
+                          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Get in <span className="text-green-500">Touch</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Need help or have questions? Our 24/7 support team is here to assist you 
@@ -106,17 +106,17 @@ const Contact = () => {
                 <Card className="h-full card-gaming hover:scale-105 transition-transform">
                   <CardContent className="p-6 text-center">
                     <div className="flex justify-center mb-4">
-                      <div className="p-3 rounded-full bg-gradient-to-r from-primary/10 to-primary/20">
-                        <contact.icon className="w-6 h-6 text-primary" />
+                      <div className="p-3 rounded-full bg-green-500/20">
+                        <contact.icon className="w-6 h-6 text-green-500" />
                       </div>
                     </div>
                     <h3 className="font-bold text-lg mb-2">{contact.title}</h3>
-                    <p className="text-primary font-medium mb-1">{contact.info}</p>
+                    <p className="text-green-500 font-medium mb-1">{contact.info}</p>
                     <p className="text-sm text-muted-foreground mb-4">{contact.description}</p>
                     {contact.action && (
                       <Button 
                         size="sm" 
-                        className="btn-gaming"
+                        className="bg-green-500 hover:bg-green-600 text-white"
                         onClick={() => window.open(contact.action, '_blank')}
                       >
                         Contact Now
@@ -156,7 +156,7 @@ const Contact = () => {
                     rows={6} 
                     className="glass"
                   />
-                  <Button className="btn-gaming w-full">
+                  <Button className="bg-green-500 hover:bg-green-600 text-white w-full">
                     <Send className="w-4 h-4 mr-2" />
                     Send Message
                   </Button>
@@ -173,14 +173,14 @@ const Contact = () => {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-2xl font-bold mb-4">
-                    Quick <span className="text-gradient">Support</span>
+                    Quick <span className="text-green-500">Support</span>
                   </h3>
                   <p className="text-muted-foreground mb-6">
                     For fastest support, join our Telegram channel where our team 
                     and community can help you instantly.
                   </p>
                   <Button 
-                    className="btn-gaming mb-4"
+                    className="bg-green-500 hover:bg-green-600 text-white mb-4"
                     onClick={() => window.open('https://telegram.dog/+LQ8-wB4AMUtkMjc1', '_blank')}
                   >
                     <MessageCircle className="w-4 h-4 mr-2" />
@@ -191,14 +191,14 @@ const Contact = () => {
                 <Card className="glass">
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-3 mb-4">
-                      <MapPin className="w-5 h-5 text-primary" />
+                      <MapPin className="w-5 h-5 text-green-500" />
                       <div>
                         <h4 className="font-medium">Location</h4>
                         <p className="text-sm text-muted-foreground">Mumbai, India</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <Clock className="w-5 h-5 text-primary" />
+                      <Clock className="w-5 h-5 text-green-500" />
                       <div>
                         <h4 className="font-medium">Response Time</h4>
                         <p className="text-sm text-muted-foreground">Within 2-4 hours</p>
@@ -222,8 +222,8 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Frequently Asked <span className="text-gradient">Questions</span>
+                          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Frequently Asked <span className="text-green-500">Questions</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Find quick answers to common questions about our platform

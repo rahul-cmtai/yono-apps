@@ -1,75 +1,63 @@
-import { useEffect, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Star, Download } from 'lucide-react';
+import { motion, Variants } from 'framer-motion';
+import { Star, Download, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 
 const FeaturedSlider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isAutoPlay, setIsAutoPlay] = useState(true);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-
   const featuredApps = [
     {
       id: 'v0-gamini',
       name: 'V0 Gamini',
-      description: 'Ultimate gaming experience with ₹51 instant bonus',
-      image: '🎮',
-      bonus: '₹51',
+      icon: '🎮',
       rating: 4.8,
+      downloads: '250K+',
+      bonus: '₹51',
+      minWithdrawal: '₹100',
+      category: 'Gaming',
+      verified: true,
+      featured: true,
+      downloadLink: 'https://allyonoapp.in/download/v0-gamini',
       gradient: 'from-[#31511E] to-[#859F3D]'
     },
     {
       id: 'rummy-king',
       name: 'Rummy King',
-      description: 'Master the art of rummy with ₹75 welcome bonus',
-      image: '👑',
-      bonus: '₹75',
+      icon: '👑',
       rating: 4.7,
-      gradient: 'from-[#859F3D] to-[#31511E]'
+      downloads: '180K+',
+      bonus: '₹75',
+      minWithdrawal: '₹150',
+      category: 'Card Game',
+      verified: true,
+      featured: true,
+      downloadLink: 'https://allyonoapp.in/download/rummy-king',
+      gradient: 'from-[#1E3A51] to-[#0D5A8C]'
     },
     {
       id: 'teen-patti',
       name: 'Teen Patti Master',
-      description: 'Play teen patti like a pro with instant rewards',
-      image: '🎯',
-      bonus: '₹41',
+      icon: '🎯',
       rating: 4.6,
-      gradient: 'from-[#31511E] to-[#859F3D]'
+      downloads: '150K+',
+      bonus: '₹41',
+      minWithdrawal: '₹120',
+      category: 'Card Game',
+      verified: true,
+      featured: true,
+      downloadLink: 'https://allyonoapp.in/download/teen-patti',
+      gradient: 'from-[#512D1E] to-[#8C3D0D]'
     }
   ];
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % featuredApps.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + featuredApps.length) % featuredApps.length);
-  };
-
-  const goToSlide = (index: number) => {
-    setCurrentSlide(index);
-  };
-
-  useEffect(() => {
-    if (isAutoPlay) {
-      timeoutRef.current = setTimeout(nextSlide, 4000);
-    }
-    return () => {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-    };
-  }, [currentSlide, isAutoPlay]);
-
   return (
-    <section className="py-16 lg:py-24 relative overflow-hidden">
-      <div className="container mx-auto px-4">
+    <section className="py-12 lg:py-20 relative overflow-hidden">
+      <div className="w-full px-0">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-10"
         >
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             <span className="text-gradient">Featured</span> This Week
@@ -79,122 +67,146 @@ const FeaturedSlider = () => {
           </p>
         </motion.div>
 
-        <div className="relative max-w-4xl mx-auto">
-          {/* Main Slider */}
-          <div
-            className="relative h-64 md:h-80 lg:h-96 rounded-3xl overflow-hidden"
-            onMouseEnter={() => setIsAutoPlay(false)}
-            onMouseLeave={() => setIsAutoPlay(true)}
-          >
-            {featuredApps.map((app, index) => (
-              <motion.div
-                key={app.id}
-                className={`absolute inset-0 bg-gradient-to-r ${app.gradient}`}
-                initial={{ opacity: 0, x: 100 }}
-                animate={{
-                  opacity: index === currentSlide ? 1 : 0,
-                  x: index === currentSlide ? 0 : index < currentSlide ? -100 : 100
-                }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-              >
-                <div className="absolute inset-0 bg-black/20" />
-                <div className="relative h-full flex items-center justify-between p-8 lg:p-12">
-                  <div className="flex-1 text-[#F6FCDF] max-w-2xl">
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.2 }}
-                      className="mb-4"
-                    >
-                      <div className="text-6xl lg:text-8xl mb-4 filter drop-shadow-lg">
-                        {app.image}
-                      </div>
-                    </motion.div>
-                    
-                    <motion.h3
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.3 }}
-                      className="text-3xl lg:text-4xl font-bold mb-4"
-                    >
-                      {app.name}
-                    </motion.h3>
-                    
-                    <motion.p
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.4 }}
-                      className="text-lg lg:text-xl mb-6 opacity-90"
-                    >
-                      {app.description}
-                    </motion.p>
-
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.5 }}
-                      className="flex items-center space-x-6 mb-8"
-                    >
-                      <div className="flex items-center space-x-2">
-                        <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                        <span className="font-semibold">{app.rating}</span>
-                      </div>
-                      <div className="text-2xl font-bold">
-                        {app.bonus} <span className="text-lg">Bonus</span>
-                      </div>
-                    </motion.div>
-
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.6 }}
-                    >
-                      <Button 
-                        size="lg" 
-                        className="bg-[#F6FCDF] text-[#1A1A19] hover:bg-[#F6FCDF]/90 font-bold px-8 py-3 rounded-xl"
-                      >
-                        <Download className="w-5 h-5 mr-2" />
-                        Download Now
-                      </Button>
-                    </motion.div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Navigation Arrows */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#F6FCDF]/20 backdrop-blur-sm rounded-full flex items-center justify-center text-[#F6FCDF] hover:bg-[#F6FCDF]/30 transition-all z-10"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          
-          <button
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#F6FCDF]/20 backdrop-blur-sm rounded-full flex items-center justify-center text-[#F6FCDF] hover:bg-[#F6FCDF]/30 transition-all z-10"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
-
-          {/* Dots Indicator */}
-          <div className="flex justify-center space-x-3 mt-8">
-            {featuredApps.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentSlide 
-                    ? 'bg-gradient-to-r from-[#31511E] to-[#859F3D] scale-125' 
-                    : 'bg-gray-300 hover:bg-gray-400'
-                }`}
-              />
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
+          {featuredApps.map((app, index) => (
+            <FeaturedCard key={app.id} app={app} index={index} />
+          ))}
         </div>
       </div>
     </section>
+  );
+};
+
+interface FeaturedCardProps {
+  app: {
+    id: string;
+    name: string;
+    icon: string;
+    rating: number;
+    downloads: string;
+    bonus: string;
+    minWithdrawal: string;
+    category: string;
+    verified: boolean;
+    featured: boolean;
+    downloadLink: string;
+    gradient: string;
+  };
+  index: number;
+}
+
+const FeaturedCard = ({ app, index }: FeaturedCardProps) => {
+  const cardVariants: Variants = {
+    hidden: { 
+      opacity: 0, 
+      y: 30,
+      scale: 0.95
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      scale: 1,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 100,
+        delay: index * 0.2
+      }
+    }
+  };
+
+  return (
+    <motion.div
+      variants={cardVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      whileHover={{ 
+        y: -8,
+        scale: 1.05,
+        transition: { type: "spring", stiffness: 300 }
+      }}
+      className="relative"
+    >
+      <div className={`bg-gradient-to-br ${app.gradient} shadow-lg p-5 h-full flex flex-col overflow-hidden`}>
+        <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-10 -mt-10 blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-6 -mb-6 blur-2xl"></div>
+        
+        <Badge className="bg-yellow-500/90 text-black font-bold px-3 py-1 rounded-full shadow-lg self-start mb-3">
+          FEATURED
+        </Badge>
+
+        {/* App Header */}
+        <div className="flex items-center space-x-3 mb-4">
+          <div className="relative">
+            <div className="w-16 h-16 rounded-xl flex items-center justify-center bg-white/20 text-white text-3xl shadow-inner">
+              {app.icon}
+            </div>
+            {app.verified && (
+              <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                <Shield className="w-4 h-4 text-white" />
+              </div>
+            )}
+          </div>
+          
+          <div className="flex-1 min-w-0">
+            <h3 className="font-bold text-xl text-white mb-1 truncate">
+              {app.name}
+            </h3>
+            <div className="flex items-center space-x-2 text-sm text-white/80">
+              <div className="flex items-center">
+                <Star className="w-4 h-4 text-yellow-400 fill-current mr-1" />
+                <span>{app.rating}</span>
+              </div>
+              <span>•</span>
+              <span>{app.category}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Bonus Info */}
+        <div className="bg-white/10 rounded-lg p-4 mb-4">
+          <div className="flex items-center justify-between">
+            <div className="text-sm text-white/70">
+              Signup Bonus
+            </div>
+            <div className="text-2xl font-bold text-white">
+              {app.bonus}
+            </div>
+          </div>
+          <div className="flex items-center justify-between mt-2">
+            <div className="text-sm text-white/70">
+              Min Withdrawal
+            </div>
+            <div className="text-base font-medium text-white/90">
+              {app.minWithdrawal}
+            </div>
+          </div>
+        </div>
+
+        {/* Download Button */}
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="mt-auto"
+        >
+          <a 
+            href={app.downloadLink} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="block"
+          >
+            <Button 
+              className="bg-green-600 hover:bg-white/90 text-white hover:text-black font-medium border-none w-full rounded-lg shadow-lg"
+              size="lg"
+            >
+              <Download className="w-5 h-5 mr-2" />
+              Download Now
+            </Button>
+          </a>
+        </motion.div>
+      </div>
+    </motion.div>
   );
 };
 

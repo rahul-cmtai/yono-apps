@@ -7,7 +7,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 const FeaturedSlider = () => {
   const isMobile = useIsMobile();
   
-  // Original featured apps for desktop view
+  // Updated featured apps for desktop view with lighter theme gradient
   const desktopFeaturedApps = [
     {
       id: 'v0-gamini',
@@ -21,7 +21,7 @@ const FeaturedSlider = () => {
       verified: true,
       featured: true,
       downloadLink: 'https://allyonoapp.in/download/v0-gamini',
-      gradient: 'from-[#31511E] to-[#859F3D]'
+      gradient: 'from-[#E8F5E9] to-[#C8E6C9]'
     },
     {
       id: 'rummy-king',
@@ -35,7 +35,7 @@ const FeaturedSlider = () => {
       verified: true,
       featured: true,
       downloadLink: 'https://allyonoapp.in/download/rummy-king',
-      gradient: 'from-[#1E3A51] to-[#0D5A8C]'
+      gradient: 'from-[#E8F5E9] to-[#C8E6C9]'
     },
     {
       id: 'teen-patti',
@@ -49,17 +49,16 @@ const FeaturedSlider = () => {
       verified: true,
       featured: true,
       downloadLink: 'https://allyonoapp.in/download/teen-patti',
-      gradient: 'from-[#512D1E] to-[#8C3D0D]'
+      gradient: 'from-[#E8F5E9] to-[#C8E6C9]'
     }
   ];
 
-  // Mobile view apps matching the image
+  // Mobile view apps with updated lighter theme gradient
   const mobileFeaturedApps = [
     {
       id: 'yono-arcade',
       name: 'Yono Arcade',
       icon: '🎮',
-      bgColor: 'bg-orange-500',
       number: 'NO1',
       downloadLink: 'https://allyonoapp.in/download/yono-arcade',
       verified: true
@@ -68,7 +67,6 @@ const FeaturedSlider = () => {
       id: 'yono-slots',
       name: 'Yono Slots',
       icon: '🎮',
-      bgColor: 'bg-gray-200',
       number: 'NO2',
       downloadLink: 'https://allyonoapp.in/download/yono-slots',
       verified: true
@@ -77,7 +75,6 @@ const FeaturedSlider = () => {
       id: 'spin-winner',
       name: 'Spin Winner',
       icon: '🎮',
-      bgColor: 'bg-amber-500',
       number: 'NO3',
       downloadLink: 'https://allyonoapp.in/download/spin-winner',
       verified: true
@@ -162,7 +159,7 @@ const FeaturedSlider = () => {
   );
 };
 
-// Original desktop card component
+// Desktop card component
 interface DesktopFeaturedCardProps {
   app: {
     id: string;
@@ -214,18 +211,18 @@ const DesktopFeaturedCard = ({ app, index }: DesktopFeaturedCardProps) => {
       }}
       className="relative"
     >
-      <div className={`bg-gradient-to-br ${app.gradient} shadow-lg p-5 h-full flex flex-col overflow-hidden`}>
-        <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-10 -mt-10 blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-6 -mb-6 blur-2xl"></div>
+      <div className={`bg-gradient-to-br ${app.gradient} shadow-md p-5 h-full flex flex-col overflow-hidden rounded-xl border border-green-200`}>
+        <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full -mr-10 -mt-10 blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-24 h-24 bg-green-500/10 rounded-full -ml-6 -mb-6 blur-2xl"></div>
         
-        <Badge className="bg-yellow-500/90 text-black font-bold px-3 py-1 rounded-full shadow-lg self-start mb-3">
+        <Badge className="bg-green-500 text-white font-bold px-3 py-1 rounded-full shadow-md self-start mb-3">
           FEATURED
         </Badge>
 
         {/* App Header */}
         <div className="flex items-center space-x-3 mb-4">
           <div className="relative">
-            <div className="w-16 h-16 rounded-xl flex items-center justify-center bg-white/20 text-white text-3xl shadow-inner">
+            <div className="w-16 h-16 rounded-xl flex items-center justify-center bg-green-500/20 text-black text-3xl shadow-inner">
               {app.icon}
             </div>
             {app.verified && (
@@ -236,12 +233,12 @@ const DesktopFeaturedCard = ({ app, index }: DesktopFeaturedCardProps) => {
           </div>
           
           <div className="flex-1 min-w-0">
-            <h3 className="font-bold text-xl text-white mb-1 truncate">
+            <h3 className="font-bold text-xl text-black mb-1 truncate">
               {app.name}
             </h3>
-            <div className="flex items-center space-x-2 text-sm text-white/80">
+            <div className="flex items-center space-x-2 text-sm text-black/70">
               <div className="flex items-center">
-                <Star className="w-4 h-4 text-yellow-400 fill-current mr-1" />
+                <Star className="w-4 h-4 text-yellow-500 fill-current mr-1" />
                 <span>{app.rating}</span>
               </div>
               <span>•</span>
@@ -251,20 +248,20 @@ const DesktopFeaturedCard = ({ app, index }: DesktopFeaturedCardProps) => {
         </div>
 
         {/* Bonus Info */}
-        <div className="bg-white/10 rounded-lg p-4 mb-4">
+        <div className="bg-white/60 rounded-lg p-4 mb-4 border border-green-100">
           <div className="flex items-center justify-between">
-            <div className="text-sm text-white/70">
+            <div className="text-sm text-black/70">
               Signup Bonus
             </div>
-            <div className="text-2xl font-bold text-white">
+            <div className="text-2xl font-bold text-green-600">
               {app.bonus}
             </div>
           </div>
           <div className="flex items-center justify-between mt-2">
-            <div className="text-sm text-white/70">
+            <div className="text-sm text-black/70">
               Min Withdrawal
             </div>
-            <div className="text-base font-medium text-white/90">
+            <div className="text-base font-medium text-black">
               {app.minWithdrawal}
             </div>
           </div>
@@ -283,7 +280,7 @@ const DesktopFeaturedCard = ({ app, index }: DesktopFeaturedCardProps) => {
             className="block"
           >
             <Button 
-              className="bg-green-500 hover:bg-white/90 text-white hover:text-black font-medium border-none w-full rounded-lg shadow-lg"
+              className="bg-green-500 hover:bg-green-600 text-white font-medium border-none w-full rounded-lg shadow-md"
               size="lg"
             >
               <Download className="w-5 h-5 mr-2" />
@@ -296,13 +293,12 @@ const DesktopFeaturedCard = ({ app, index }: DesktopFeaturedCardProps) => {
   );
 };
 
-// Mobile card component matching the image
+// Mobile card component with lighter theme
 interface MobileFeaturedCardProps {
   app: {
     id: string;
     name: string;
     icon: string;
-    bgColor: string;
     number: string;
     downloadLink: string;
     verified: boolean;
@@ -330,13 +326,6 @@ const MobileFeaturedCard = ({ app, index }: MobileFeaturedCardProps) => {
     }
   };
 
-  // Determine text color based on background
-  const textColor = app.bgColor === 'bg-gray-200' ? 'text-black' : 'text-white';
-  
-  // Add border color based on background
-  const borderColor = app.bgColor === 'bg-orange-500' ? 'border-orange-300' : 
-                      app.bgColor === 'bg-gray-200' ? 'border-gray-300' : 'border-amber-300';
-
   return (
     <motion.div
       variants={cardVariants}
@@ -348,23 +337,23 @@ const MobileFeaturedCard = ({ app, index }: MobileFeaturedCardProps) => {
         scale: 1.05,
         transition: { type: "spring", stiffness: 300 }
       }}
-      className={`${app.bgColor} rounded-lg overflow-hidden border-2 ${borderColor} relative shadow-md h-40`}
+      className="bg-gradient-to-br from-[#E8F5E9] to-[#C8E6C9] rounded-lg overflow-hidden border border-green-200 relative shadow-md h-40"
     >
       {/* Number Label */}
-      <div className="absolute top-1 right-1 bg-white/20 rounded-full w-6 h-6 flex items-center justify-center">
-        <span className="text-xs font-bold">{app.number}</span>
+      <div className="absolute top-1 right-1 bg-green-500/20 rounded-full w-6 h-6 flex items-center justify-center">
+        <span className="text-xs font-bold text-black">{app.number}</span>
       </div>
       
       <div className="flex flex-col items-center p-2 text-center h-full">
         {/* App Logo */}
         <div className="mb-2 mt-1">
-          <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
+          <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center">
             <span className="text-3xl">{app.icon}</span>
           </div>
         </div>
         
         {/* App Name */}
-        <h3 className={`font-bold text-sm mb-2 ${textColor}`}>
+        <h3 className="font-bold text-sm mb-2 text-black">
           {app.name}
         </h3>
         
@@ -384,7 +373,7 @@ const MobileFeaturedCard = ({ app, index }: MobileFeaturedCardProps) => {
         
         {/* Trusted Label */}
         {app.verified && (
-          <div className={`mt-1 text-[10px] font-medium ${textColor}`}>
+          <div className="mt-1 text-[10px] font-medium text-black">
             100% Trusted
           </div>
         )}

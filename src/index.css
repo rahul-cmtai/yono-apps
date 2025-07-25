@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Yono App Gaming Platform Color System */
+    --background: 60 50% 96%;  /* #F6FCDF - Light Cream */
+    --foreground: 60 3% 10%;   /* #1A1A19 - Dark Charcoal */
+
+    --card: 60 50% 96%;        /* #F6FCDF - Light Cream */
+    --card-foreground: 60 3% 10%;  /* #1A1A19 - Dark Charcoal */
+
+    --popover: 60 50% 96%;     /* #F6FCDF - Light Cream */
+    --popover-foreground: 60 3% 10%;  /* #1A1A19 - Dark Charcoal */
+
+    /* Forest to Olive Green Gradient */
+    --primary: 96 45% 22%;     /* #31511E - Forest Green */
+    --primary-foreground: 60 50% 96%;  /* #F6FCDF - Light Cream */
+    --primary-glow: 74 45% 43%;  /* #859F3D - Olive Green */
+    --primary-dark: 96 45% 15%;  /* #1A2809 - Dark Forest Green */
+
+    --secondary: 60 50% 96%;   /* #F6FCDF - Light Cream */
+    --secondary-foreground: 60 3% 10%;  /* #1A1A19 - Dark Charcoal */
+
+    --muted: 60 30% 92%;       /* Lighter version of Light Cream */
+    --muted-foreground: 60 3% 40%;  /* Lighter version of Dark Charcoal */
+
+    --accent: 74 45% 43%;      /* #859F3D - Olive Green */
+    --accent-foreground: 60 50% 96%;  /* #F6FCDF - Light Cream */
+    --accent-dark: 74 45% 30%;  /* #5D6F2B - Darker Olive Green */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 60 20% 90%;      /* Light border based on cream */
+    --input: 60 20% 90%;       /* Light input based on cream */
+    --ring: 96 45% 22%;        /* #31511E - Forest Green */
+
+    --radius: 0.75rem;
+
+    /* Gaming Platform Gradients */
+    --gradient-primary: linear-gradient(135deg, #31511E, #859F3D);  /* Forest Green to Olive Green */
+    --gradient-hero: linear-gradient(135deg, #31511E 0%, #859F3D 100%);  /* Forest Green to Olive Green */
+    --gradient-card: linear-gradient(145deg, rgba(246,252,223,0.9) 0%, rgba(246,252,223,0.7) 100%);  /* Light Cream */
+    --gradient-dark: linear-gradient(135deg, #1A2809 0%, #31511E 100%);  /* Dark Forest to Forest Green */
+    
+    /* Gaming Effects */
+    --shadow-neon: 0 0 30px rgba(133, 159, 61, 0.3);  /* Olive Green glow */
+    --shadow-glow: 0 4px 20px rgba(49, 81, 30, 0.2);  /* Forest Green glow */
+    --shadow-card: 0 8px 32px rgba(26, 26, 25, 0.08);  /* Dark Charcoal shadow */
+    --shadow-dark: 0 4px 20px rgba(26, 40, 9, 0.3);  /* Dark Forest Green glow */
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 60 50% 96%;  /* #F6FCDF - Light Cream */
+    --sidebar-foreground: 60 3% 10%;   /* #1A1A19 - Dark Charcoal */
+    --sidebar-primary: 96 45% 22%;     /* #31511E - Forest Green */
+    --sidebar-primary-foreground: 60 50% 96%;  /* #F6FCDF - Light Cream */
+    --sidebar-accent: 74 45% 43%;      /* #859F3D - Olive Green */
+    --sidebar-accent-foreground: 60 50% 96%;  /* #F6FCDF - Light Cream */
+    --sidebar-border: 60 20% 90%;      /* Light border based on cream */
+    --sidebar-ring: 96 45% 22%;        /* #31511E - Forest Green */
+  }
+
+  .dark {
+    --background: 60 3% 10%;    /* #1A1A19 - Dark Charcoal */
+    --foreground: 60 50% 96%;   /* #F6FCDF - Light Cream */
+
+    --card: 60 3% 12%;          /* Slightly lighter Dark Charcoal */
+    --card-foreground: 60 50% 96%;  /* #F6FCDF - Light Cream */
+
+    --popover: 60 3% 12%;       /* Slightly lighter Dark Charcoal */
+    --popover-foreground: 60 50% 96%;  /* #F6FCDF - Light Cream */
+
+    --primary: 96 45% 22%;      /* #31511E - Forest Green */
+    --primary-foreground: 60 50% 96%;  /* #F6FCDF - Light Cream */
+    --primary-glow: 74 45% 43%;   /* #859F3D - Olive Green */
+    --primary-dark: 96 45% 15%;  /* #1A2809 - Dark Forest Green */
+
+    --secondary: 60 3% 15%;     /* Slightly lighter Dark Charcoal */
+    --secondary-foreground: 60 50% 96%;  /* #F6FCDF - Light Cream */
+
+    --muted: 60 3% 20%;         /* Lighter version of Dark Charcoal */
+    --muted-foreground: 60 30% 80%;  /* Darker version of Light Cream */
+
+    --accent: 74 45% 43%;       /* #859F3D - Olive Green */
+    --accent-foreground: 60 50% 96%;  /* #F6FCDF - Light Cream */
+    --accent-dark: 74 45% 30%;  /* #5D6F2B - Darker Olive Green */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 60 3% 20%;        /* Dark border based on charcoal */
+    --input: 60 3% 20%;         /* Dark input based on charcoal */
+    --ring: 74 45% 43%;         /* #859F3D - Olive Green */
+    
+    --gradient-primary: linear-gradient(135deg, #31511E, #859F3D);  /* Forest Green to Olive Green */
+    --gradient-hero: linear-gradient(135deg, #31511E 0%, #859F3D 100%);  /* Forest Green to Olive Green */
+    --gradient-dark: linear-gradient(135deg, #1A2809 0%, #31511E 100%);  /* Dark Forest to Forest Green */
+    --shadow-neon: 0 0 30px rgba(133, 159, 61, 0.4);  /* Olive Green glow */
+    --shadow-dark: 0 4px 20px rgba(26, 40, 9, 0.4);  /* Dark Forest Green glow */
+
+    --sidebar-background: 60 3% 12%;    /* Slightly lighter Dark Charcoal */
+    --sidebar-foreground: 60 50% 96%;   /* #F6FCDF - Light Cream */
+    --sidebar-primary: 74 45% 43%;      /* #859F3D - Olive Green */
+    --sidebar-primary-foreground: 60 50% 96%;  /* #F6FCDF - Light Cream */
+    --sidebar-accent: 60 3% 20%;        /* Lighter version of Dark Charcoal */
+    --sidebar-accent-foreground: 60 50% 96%;  /* #F6FCDF - Light Cream */
+    --sidebar-border: 60 3% 20%;        /* Dark border based on charcoal */
+    --sidebar-ring: 74 45% 43%;         /* #859F3D - Olive Green */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+@layer components {
+  /* Gaming Platform Button Variants */
+  .btn-gaming {
+    @apply relative inline-flex items-center justify-center px-6 py-3 font-semibold rounded-xl;
+    @apply bg-gradient-to-r from-[#1A2809] to-[#31511E] text-[#F6FCDF];
+    @apply shadow-lg hover:shadow-xl transform hover:scale-105;
+    @apply transition-all duration-300 ease-out;
+    @apply before:absolute before:inset-0 before:rounded-xl;
+    @apply before:bg-gradient-to-r before:from-[#31511E] before:to-[#859F3D];
+    @apply before:opacity-0 hover:before:opacity-20 before:transition-opacity;
+    box-shadow: 0 0 20px rgba(26, 40, 9, 0.4);
+  }
+  
+  .btn-gaming:hover {
+    box-shadow: 0 0 30px rgba(49, 81, 30, 0.5);
+  }
+  
+  .btn-secondary-gaming {
+    @apply relative inline-flex items-center justify-center px-6 py-3 font-semibold rounded-xl;
+    @apply bg-[#F6FCDF]/10 backdrop-blur-sm border border-[#31511E]/50 text-[#31511E];
+    @apply hover:bg-[#31511E]/10 hover:border-[#31511E]/70;
+    @apply transition-all duration-300 ease-out transform hover:scale-105;
+  }
+
+  /* Gaming Card Effects */
+  .card-gaming {
+    @apply relative overflow-hidden rounded-2xl border border-[#F6FCDF]/20;
+    @apply bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10;
+    @apply shadow-lg hover:shadow-xl transition-all duration-300;
+    @apply transform hover:scale-[1.02] hover:-translate-y-1;
+  }
+  
+  .card-gaming::before {
+    @apply absolute inset-0 bg-gradient-to-r from-[#1A2809]/10 to-[#859F3D]/10;
+    @apply opacity-0 transition-opacity duration-300;
+    content: '';
+  }
+  
+  .card-gaming:hover::before {
+    @apply opacity-100;
+  }
+
+  /* Neon Glow Effects */
+  .glow-forest {
+    filter: drop-shadow(0 0 10px rgba(49, 81, 30, 0.5));
+  }
+  
+  .glow-olive {
+    filter: drop-shadow(0 0 10px rgba(133, 159, 61, 0.5));
+  }
+  
+  .glow-dark {
+    filter: drop-shadow(0 0 10px rgba(26, 40, 9, 0.5));
+  }
+
+  /* Text Gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#31511E] to-[#859F3D] bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-dark {
+    @apply bg-gradient-to-r from-[#1A2809] to-[#31511E] bg-clip-text text-transparent;
+  }
+
+  /* Glassmorphism */
+  .glass {
+    @apply bg-[#F6FCDF]/10 backdrop-blur-md border border-[#F6FCDF]/20;
+  }
+  
+  .glass-dark {
+    @apply bg-[#1A2809]/10 backdrop-blur-md border border-[#31511E]/20;
+  }
+}

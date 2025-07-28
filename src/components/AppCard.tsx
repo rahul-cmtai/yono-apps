@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 interface AppCardProps {
   app: {
@@ -22,6 +23,10 @@ interface AppCardProps {
 }
 
 const AppCard = ({ app, index = 0, ranking }: AppCardProps) => {
+  const navigate = useNavigate();
+  const handleCardClick = () => {
+    navigate(`/apps/${app.id}`);
+  };
   const cardVariants = {
     hidden: { 
       opacity: 0, 
@@ -50,6 +55,7 @@ const AppCard = ({ app, index = 0, ranking }: AppCardProps) => {
         transition: { type: "spring", stiffness: 300 }
       }}
       className="relative bg-white rounded-md shadow-md overflow-hidden w-full cursor-pointer transition-all duration-300"
+      onClick={handleCardClick}
     >
       {/* Ranking Number */}
       {ranking && (
@@ -85,19 +91,13 @@ const AppCard = ({ app, index = 0, ranking }: AppCardProps) => {
 
         {/* Download Button */}
         <div className="flex-shrink-0 ml-2">
-          <a 
-            href={app.downloadLink} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="block"
+          <Button 
+            className="bg-green-500 hover:bg-blue-600 text-white text-sm font-medium border-none rounded-md px-4 py-1 h-auto shadow-md"
+            onClick={e => { e.stopPropagation(); handleCardClick(); }}
           >
-            <Button 
-              className="bg-green-500 hover:bg-blue-600 text-white text-sm font-medium border-none rounded-md px-4 py-1 h-auto shadow-md"
-            >
-              <Download className="w-3 h-3 mr-1" />
-              Download
-            </Button>
-          </a>
+            <Download className="w-3 h-3 mr-1" />
+            Download
+          </Button>
         </div>
       </div>
     </motion.div>

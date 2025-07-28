@@ -24,13 +24,13 @@ const Contact = () => {
       description: 'Instant help and community',
       action: 'https://telegram.dog/+LQ8-wB4AMUtkMjc1'
     },
-    {
-      icon: Phone,
-      title: 'WhatsApp',
-      info: '+91 9876543210',
-      description: 'Quick assistance',
-      action: 'https://wa.me/919876543210'
-    },
+    // {
+    //   icon: Phone,
+    //   title: 'WhatsApp',
+    //   info: '+91 9876543210',
+    //   description: 'Quick assistance',
+    //   action: 'https://wa.me/919876543210'
+    // },
     {
       icon: Clock,
       title: 'Support Hours',
@@ -93,8 +93,8 @@ const Contact = () => {
 
       {/* Contact Cards */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {contactInfo.map((contact, index) => (
               <motion.div
                 key={contact.title}

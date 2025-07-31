@@ -104,7 +104,7 @@ const Disclaimer = () => {
     {
       title: "Limitation of Liability",
       content: [
-        "Yono App's liability is limited to the maximum extent permitted by law.",
+        "JaiHo App's liability is limited to the maximum extent permitted by law.",
         "We are not liable for indirect, incidental, or consequential damages.",
         "Our maximum liability is limited to the amount paid by the user to our platform.",
         "This disclaimer applies regardless of the legal theory (contract, tort, etc.).",
@@ -159,7 +159,7 @@ const Disclaimer = () => {
                 <div>
                   <h3 className="font-bold text-lg mb-2 text-red-600 dark:text-red-400">⚠️ Important Warning</h3>
                   <p className="text-muted-foreground">
-                    By using Yono App, you acknowledge that you have read, understood, and accept all risks and 
+                    By using JaiHo App, you acknowledge that you have read, understood, and accept all risks and 
                     limitations outlined in this disclaimer. Gaming involves financial risk and should only be 
                     undertaken by individuals who can afford potential losses.
                   </p>

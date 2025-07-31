@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Yono App Gaming Platform Color System */
+    /* JaiHo App Gaming Platform Color System */
     --background: 60 50% 96%;  /* #F6FCDF - Light Cream */
     --foreground: 60 3% 10%;   /* #1A1A19 - Dark Charcoal */
 

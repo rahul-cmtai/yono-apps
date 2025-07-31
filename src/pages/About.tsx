@@ -64,7 +64,7 @@ const About = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              About <span className="text-gradient">Yono App</span>
+              About <span className="text-gradient">JaiHo App</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               India's most trusted gaming APK platform, providing safe and verified games 
@@ -85,7 +85,7 @@ const About = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Choose <span className="text-gradient">Yono App?</span>
+              Why Choose <span className="text-gradient">JaiHo App?</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We provide the most secure and rewarding gaming experience in India

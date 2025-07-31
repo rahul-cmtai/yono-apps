@@ -20,7 +20,6 @@ const allApps = [
 		category: 'Card Game',
 		verified: true,
 		featured: true,
-		downloadLink: 'https://allyonoapp.in/download/hi-rummy',
 		detailLink: '/app/hi-rummy',
 	},
 	{
@@ -34,7 +33,6 @@ const allApps = [
 		category: 'Gaming',
 		verified: true,
 		featured: true,
-		downloadLink: 'https://allyonoapp.in/download/jaiho-win',
 		detailLink: '/app/jaiho-win',
 	},
 	{
@@ -47,7 +45,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Gaming',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/ind-club',
 		detailLink: '/app/ind-club',
 	},
 	{
@@ -60,7 +57,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Card Game',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/top-rummy',
 		detailLink: '/app/top-rummy',
 	},
 	{
@@ -73,7 +69,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/yn-777',
 		detailLink: '/app/yn-777',
 	},
 	{
@@ -86,7 +81,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Card Game',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/ind-rummy',
 		detailLink: '/app/ind-rummy',
 	},
 	{
@@ -99,7 +93,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/jaiho-slots',
 		detailLink: '/app/jaiho-slots',
 	},
 	{
@@ -112,7 +105,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Card Game',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/teen-patti-master',
 		detailLink: '/app/teen-patti-master',
 	},
 	{
@@ -125,7 +117,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/saga-slots',
 		detailLink: '/app/saga-slots',
 	},
 	{
@@ -138,7 +129,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Card Game',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/abc-rummy',
 		detailLink: '/app/abc-rummy',
 	},
 	{
@@ -151,7 +141,6 @@ const allApps = [
 		minWithdrawal: '₹10',
 		category: 'Gaming',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/winzo-gold',
 		detailLink: '/app/winzo-gold',
 	},
 	{
@@ -164,7 +153,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/jaiho-777',
 		detailLink: '/app/jaiho-777',
 	},
 	{
@@ -177,7 +165,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Card Game',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/rummy-91',
 		detailLink: '/app/rummy-91',
 	},
 	{
@@ -190,7 +177,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/jaiho-spin',
 		detailLink: '/app/jaiho-spin',
 	},
 	{
@@ -203,7 +189,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Card Game',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/jaiho-rummy',
 		detailLink: '/app/jaiho-rummy',
 	},
 	{
@@ -216,7 +201,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Arcade',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/jaiho-arcade',
 		detailLink: '/app/jaiho-arcade',
 	},
 	{
@@ -229,7 +213,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/slots-spin',
 		detailLink: '/app/slots-spin',
 	},
 	{
@@ -242,7 +225,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Betting',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/bet-213',
 		detailLink: '/app/bet-213',
 	},
 	{
@@ -255,7 +237,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Betting',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/mwm-bet',
 		detailLink: '/app/mwm-bet',
 	},
 	{
@@ -268,7 +249,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Gaming',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/en-365',
 		detailLink: '/app/en-365',
 	},
 	{
@@ -281,7 +261,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/spin-winner',
 		detailLink: '/app/spin-winner',
 	},
 	{
@@ -294,7 +273,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/yono-777',
 		detailLink: '/app/yono-777',
 	},
 	{
@@ -307,7 +285,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/spin-gold',
 		detailLink: '/app/spin-gold',
 	},
 	{
@@ -321,7 +298,6 @@ const allApps = [
 		category: 'Gaming',
 		verified: true,
 		featured: true,
-		downloadLink: 'https://allyonoapp.in/download/yono-all-games',
 		detailLink: '/app/yono-all-games',
 	},
 	{
@@ -334,7 +310,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Card Game',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/gogo-rummy',
 		detailLink: '/app/gogo-rummy',
 	},
 	{
@@ -347,7 +322,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Gaming',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/yono-vip',
 		detailLink: '/app/yono-vip',
 	},
 	{
@@ -360,7 +334,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Gaming',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/yono-winner',
 		detailLink: '/app/yono-winner',
 	},
 	{
@@ -373,7 +346,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/789-jackpots',
 		detailLink: '/app/789-jackpots',
 	},
 	{
@@ -386,7 +358,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Betting',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/mbm-bet',
 		detailLink: '/app/mbm-bet',
 	},
 	{
@@ -399,7 +370,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/ind-slots',
 		detailLink: '/app/ind-slots',
 	},
 	{
@@ -412,7 +382,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/yono-slots',
 		detailLink: '/app/yono-slots',
 	},
 	{
@@ -425,7 +394,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Bingo',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/bingo-101',
 		detailLink: '/app/bingo-101',
 	},
 	{
@@ -438,7 +406,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Card Game',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/rummy-365',
 		detailLink: '/app/rummy-365',
 	},
 	{
@@ -451,7 +418,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/spin-crush',
 		detailLink: '/app/spin-crush',
 	},
 	{
@@ -464,7 +430,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/slots-winner',
 		detailLink: '/app/slots-winner',
 	},
 	{
@@ -477,7 +442,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/spin-101',
 		detailLink: '/app/spin-101',
 	},
 	{
@@ -490,7 +454,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Gaming',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/ind-vip',
 		detailLink: '/app/ind-vip',
 	},
 	{
@@ -503,7 +466,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/567-slots',
 		detailLink: '/app/567-slots',
 	},
 	{
@@ -516,7 +478,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Arcade',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/yono-arcade',
 		detailLink: '/app/yono-arcade',
 	},
 	{
@@ -529,7 +490,6 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Card Game',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/rummy-420',
 		detailLink: '/app/rummy-420',
 	},
 	{
@@ -542,6 +502,46 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Gaming',
 		verified: true,
+		detailLink: '/app/yono-games',
+	},
+	{
+		id: 'teen-patti-live',
+		name: 'Teen Patti Live',
+		icon: '🎮',
+		rating: 4.7,
+		downloads: '180K+',
+		bonus: '₹36',
+		minWithdrawal: '₹100',
+		category: 'Card Game',
+		verified: true,
+		detailLink: '/app/teen-patti-live',
+	},
+	{
+		id: 'spin-777',
+		name: 'Spin 777',
+		icon: '🎮',
+		rating: 4.3,
+		downloads: '75K+',
+		bonus: '₹29',
+		minWithdrawal: '₹100',
+		category: 'Casino',
+		verified: true,
+		detailLink: '/app/spin-777',
+	},
+	{
+		id: 'spin-lucky',
+		name: 'Spin Lucky',
+		icon: '🎮',
+		rating: 4.2,
+		downloads: '60K+',
+		bonus: '₹30',
+		minWithdrawal: '₹100',
+		category: 'Casino',
+		verified: true,
+		detailLink: '/app/spin-lucky',
+	},
+	{
+		id: 'ind-bingo',
 		downloadLink: 'https://allyonoapp.in/download/yono-games',
 		detailLink: '/app/yono-games',
 	},
@@ -703,7 +703,7 @@ const AppDetail = () => {
 	// Fallbacks for missing fields
 	const icon = getAppField(appData, 'icon', '🎮');
 	const name = getAppField(appData, 'name', 'App Name');
-	const subtitle = getAppField(appData, 'subtitle', 'Yono App');
+	const subtitle = getAppField(appData, 'subtitle', 'JaiHo App');
 	// Use 'verified' for trusted badge
 	const trusted = appData.verified ?? false;
 	const rating = Number(getAppField(appData, 'rating', '4.4'));

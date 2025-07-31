@@ -170,7 +170,7 @@ const Privacy = () => {
                 <div>
                   <h3 className="font-bold text-lg mb-2">Our Commitment to Your Privacy</h3>
                   <p className="text-muted-foreground">
-                    Yono App is committed to protecting your privacy and ensuring the security of your personal information. 
+                    JaiHo App is committed to protecting your privacy and ensuring the security of your personal information. 
                     This privacy policy describes how we collect, use, and safeguard your data when you use our platform.
                   </p>
                 </div>

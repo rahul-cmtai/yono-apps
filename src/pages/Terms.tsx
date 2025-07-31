@@ -10,7 +10,7 @@ const Terms = () => {
     {
       title: "Acceptance of Terms",
       content: [
-        "By accessing and using Yono App platform, you accept and agree to be bound by these Terms and Conditions.",
+        "By accessing and using JaiHo App platform, you accept and agree to be bound by these Terms and Conditions.",
         "If you do not agree to abide by the above, please do not use this service.",
         "These terms apply to all visitors, users, and others who access or use the service."
       ]
@@ -18,7 +18,7 @@ const Terms = () => {
     {
       title: "Use License",
       content: [
-        "Permission is granted to temporarily download one copy of the materials on Yono App's website for personal, non-commercial transitory viewing only.",
+        "Permission is granted to temporarily download one copy of the materials on JaiHo App's website for personal, non-commercial transitory viewing only.",
         "This is the grant of a license, not a transfer of title, and under this license you may not:",
         "• Modify or copy the materials",
         "• Use the materials for any commercial purpose or for any public display",
@@ -31,7 +31,7 @@ const Terms = () => {
       content: [
         "All APK files provided through our platform are verified and tested for security.",
         "Users must be 18 years or older to participate in gaming activities with real money transactions.",
-        "Yono App does not guarantee winnings or profits from gaming activities.",
+        "JaiHo App does not guarantee winnings or profits from gaming activities.",
         "Users are responsible for complying with local laws regarding online gaming.",
         "APK downloads are provided as-is, and users install them at their own risk."
       ]
@@ -42,7 +42,7 @@ const Terms = () => {
         "Users must provide accurate and complete information during registration.",
         "Each user is allowed only one account on the platform.",
         "Users are responsible for maintaining the confidentiality of their account credentials.",
-        "Yono App reserves the right to suspend or terminate accounts that violate these terms.",
+        "JaiHo App reserves the right to suspend or terminate accounts that violate these terms.",
         "Users must verify their identity for bonus claims and withdrawals."
       ]
     },
@@ -51,7 +51,7 @@ const Terms = () => {
       content: [
         "Signup bonuses are subject to terms and conditions specific to each promotion.",
         "Bonuses may have wagering requirements before withdrawal.",
-        "Yono App reserves the right to modify or cancel bonus offers at any time.",
+        "JaiHo App reserves the right to modify or cancel bonus offers at any time.",
         "Bonus abuse or fraudulent activity will result in account suspension.",
         "Withdrawal limits and processing times may apply to bonus winnings."
       ]
@@ -80,7 +80,7 @@ const Terms = () => {
     {
       title: "Limitation of Liability",
       content: [
-        "Yono App shall not be liable for any damages arising from the use of this platform.",
+        "JaiHo App shall not be liable for any damages arising from the use of this platform.",
         "We do not guarantee uninterrupted or error-free service.",
         "Users acknowledge that gaming involves risk of financial loss.",
         "The platform is provided 'as is' without any warranties.",
@@ -90,7 +90,7 @@ const Terms = () => {
     {
       title: "Modifications to Terms",
       content: [
-        "Yono App reserves the right to revise these terms at any time without notice.",
+        "JaiHo App reserves the right to revise these terms at any time without notice.",
         "Users will be notified of significant changes via email or platform notifications.",
         "Continued use of the platform after changes constitutes acceptance of new terms.",
         "Users are encouraged to review these terms periodically."
@@ -156,7 +156,7 @@ const Terms = () => {
                 <div>
                   <h3 className="font-bold text-lg mb-2">Important Notice</h3>
                   <p className="text-muted-foreground">
-                    These Terms and Conditions constitute a legally binding agreement between you and Yono App. 
+                    These Terms and Conditions constitute a legally binding agreement between you and JaiHo App. 
                     By using our platform, you acknowledge that you have read, understood, and agree to be bound by these terms.
                   </p>
                 </div>

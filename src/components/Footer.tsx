@@ -36,7 +36,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-green-500 font-poppins">
-                  Yono App
+                  JaiHo App
                 </h3>
                 <p className="text-sm text-muted-foreground">
                   Gaming APK Platform
@@ -140,7 +140,7 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              © 2025 Yono App. All rights reserved.
+              © 2025 JaiHo App. All rights reserved.
              
             </p>
             

@@ -230,7 +230,7 @@ const Privacy = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="mailto:privacy@yonoapp.com"
+                  href="mailto:privacy@onlyjaihoapps.com"
                   className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-primary/80 text-white font-medium hover:shadow-lg transition-all"
                 >
                   Email Privacy Team

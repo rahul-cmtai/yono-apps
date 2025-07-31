@@ -13,14 +13,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Support',
-      info: 'support@yonoapp.com',
+      info: 'support@onlyjaihoapps.com',
       description: 'Get help within 24 hours',
-      action: 'mailto:support@yonoapp.com'
+      action: 'mailto:support@onlyjaihoapps.com'
     },
     {
       icon: MessageCircle,
       title: 'Telegram Support',
-      info: '@YonoAppSupport',
+      info: '@JaiHoAppSupport',
       description: 'Instant help and community',
       action: 'https://telegram.dog/+LQ8-wB4AMUtkMjc1'
     },

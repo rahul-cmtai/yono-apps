@@ -104,7 +104,7 @@ const Footer = () => {
             <h4 className="font-bold text-lg mb-6 text-foreground">Contact Us</h4>
             <div className="space-y-4">
               <motion.a
-                href="mailto:support@yonoapp.com"
+                href="mailto:support@onlyjaihoapps.com"
                 className="flex items-center space-x-3 text-muted-foreground hover:text-green-500 transition-colors group"
                 whileHover={{ x: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
@@ -112,7 +112,7 @@ const Footer = () => {
                 <div className="p-2 rounded-lg bg-green-500/10 group-hover:bg-green-500/20 transition-all">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span className="text-sm">support@yonoapp.com</span>
+                <span className="text-sm">support@onlyjaihoapps.com</span>
               </motion.a>
               
               <motion.a

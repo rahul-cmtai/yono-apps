@@ -20,7 +20,7 @@ const FeaturedSlider = () => {
       category: 'Gaming',
       verified: true,
       featured: true,
-      downloadLink: 'https://allyonoapp.in/download/v0-gamini',
+      downloadLink: 'https://onlyjaihoapps.com/download/v0-gamini',
       gradient: 'from-[#f5f5f0] to-[#f0f0e6]'
     },
     {
@@ -34,7 +34,7 @@ const FeaturedSlider = () => {
       category: 'Card Game',
       verified: true,
       featured: true,
-      downloadLink: 'https://allyonoapp.in/download/rummy-king',
+      downloadLink: 'https://onlyjaihoapps.com/download/rummy-king',
       gradient: 'from-[#f5f5f0] to-[#f0f0e6]'
     },
     {
@@ -48,7 +48,7 @@ const FeaturedSlider = () => {
       category: 'Card Game',
       verified: true,
       featured: true,
-      downloadLink: 'https://allyonoapp.in/download/teen-patti',
+      downloadLink: 'https://onlyjaihoapps.com/download/teen-patti',
       gradient: 'from-[#f5f5f0] to-[#f0f0e6]'
     }
   ];
@@ -60,7 +60,7 @@ const FeaturedSlider = () => {
       name: 'Yono Arcade',
       icon: '🎮',
       number: 'NO1',
-      downloadLink: 'https://allyonoapp.in/download/yono-arcade',
+      downloadLink: 'https://onlyjaihoapps.com/download/yono-arcade',
       verified: true
     },
     {
@@ -68,7 +68,7 @@ const FeaturedSlider = () => {
       name: 'Yono Slots',
       icon: '🎮',
       number: 'NO2',
-      downloadLink: 'https://allyonoapp.in/download/yono-slots',
+      downloadLink: 'https://onlyjaihoapps.com/download/yono-slots',
       verified: true
     },
     {
@@ -76,7 +76,7 @@ const FeaturedSlider = () => {
       name: 'Spin Winner',
       icon: '🎮',
       number: 'NO3',
-      downloadLink: 'https://allyonoapp.in/download/spin-winner',
+      downloadLink: 'https://onlyjaihoapps.com/download/spin-winner',
       verified: true
     }
   ];

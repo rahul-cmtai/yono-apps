@@ -542,7 +542,7 @@ const allApps = [
 	},
 	{
 		id: 'ind-bingo',
-		downloadLink: 'https://allyonoapp.in/download/yono-games',
+		downloadLink: 'https://onlyjaihoapps.com/download/yono-games',
 		detailLink: '/app/yono-games',
 	},
 	{
@@ -555,7 +555,7 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Card Game',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/teen-patti-live',
+		downloadLink: 'https://onlyjaihoapps.com/download/teen-patti-live',
 		detailLink: '/app/teen-patti-live',
 	},
 	{
@@ -568,7 +568,7 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/spin-777',
+		downloadLink: 'https://onlyjaihoapps.com/download/spin-777',
 		detailLink: '/app/spin-777',
 	},
 	{
@@ -581,7 +581,7 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/spin-lucky',
+		downloadLink: 'https://onlyjaihoapps.com/download/spin-lucky',
 		detailLink: '/app/spin-lucky',
 	},
 	{
@@ -594,7 +594,7 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Bingo',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/ind-bingo',
+		downloadLink: 'https://onlyjaihoapps.com/download/ind-bingo',
 		detailLink: '/app/ind-bingo',
 	},
 	{
@@ -607,7 +607,7 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/my-777',
+		downloadLink: 'https://onlyjaihoapps.com/download/my-777',
 		detailLink: '/app/my-777',
 	},
 	{
@@ -620,7 +620,7 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Betting',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/mdm-bet',
+		downloadLink: 'https://onlyjaihoapps.com/download/mdm-bet',
 		detailLink: '/app/mdm-bet',
 	},
 	{
@@ -633,7 +633,7 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Casino',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/101-z',
+		downloadLink: 'https://onlyjaihoapps.com/download/101-z',
 		detailLink: '/app/101-z',
 	},
 	{
@@ -646,7 +646,7 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Betting',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/mkm-bet',
+		downloadLink: 'https://onlyjaihoapps.com/download/mkm-bet',
 		detailLink: '/app/mkm-bet',
 	},
 	{
@@ -659,7 +659,7 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Card Game',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/teen-patti-bliss',
+		downloadLink: 'https://onlyjaihoapps.com/download/teen-patti-bliss',
 		detailLink: '/app/teen-patti-bliss',
 	},
 	{
@@ -672,7 +672,7 @@ const allApps = [
 		minWithdrawal: '₹100',
 		category: 'Card Game',
 		verified: true,
-		downloadLink: 'https://allyonoapp.in/download/yono-rummy',
+		downloadLink: 'https://onlyjaihoapps.com/download/yono-rummy',
 		detailLink: '/app/yono-rummy',
 	},
 ];
